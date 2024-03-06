@@ -7,7 +7,36 @@ components:
   properties: {col_widths: '{}'}
   name: content_panel
   layout_properties: {slot: default}
-  components: []
+  components:
+  - name: label_1
+    properties: {align: center, text: Địa chỉ mạng ban đầu}
+    type: Label
+    layout_properties: {grid_position: 'RWGJJO,EDKHJC IFQEAF,AYBFZQ'}
+  - name: label_2
+    properties: {align: center, text: Số subnet muốn chia}
+    type: Label
+    layout_properties: {grid_position: 'RWGJJO,EDKHJC EORMLE,XGPNHB'}
+  - name: text_box_network
+    properties: {}
+    type: TextBox
+    layout_properties: {grid_position: 'RWGJJO,RXISRP LXPKOF,LWULCQ'}
+  - name: text_box_subnets
+    properties: {}
+    type: TextBox
+    layout_properties: {grid_position: 'RWGJJO,RXISRP ZAUOBM,XRSUBY'}
+  - name: button
+    properties: {text: Chia, align: center}
+    type: Button
+    layout_properties: {grid_position: 'AFRJHG,BLWIHM'}
+    event_bindings: {click: button_click}
+  - name: label_3
+    properties: {align: right, text: 'Các mảng con sau khi chia: '}
+    type: Label
+    layout_properties: {grid_position: 'SQIXKN,UIRHRW'}
+  - name: label_result
+    properties: {align: center}
+    type: Label
+    layout_properties: {grid_position: 'SQIXKN,KWMIDX'}
 - type: FlowPanel
   properties: {}
   name: navbar_links
